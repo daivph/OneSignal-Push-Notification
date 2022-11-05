@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="OneSignalApi" Version="1.0.1" />
+    <PackageReference Include="OneSignal.RestAPIv3.Client" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="OneSignalApi" />
+    <None Remove="Models\" />
+    <None Remove="Helper\" />
+    <None Remove="OneSignal.RestAPIv3.Client" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Helper\" />
+  </ItemGroup>
+</Project>
